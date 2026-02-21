@@ -1,0 +1,26 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+# MacOS
+.DS_Store
+
+# Swap files
+*.swp
+*.swo
+
+# Lazy.nvim
+lazy-lock.json
+
+# Mason
+mason/
+
+# Plugin compiled files
+plugin/packer_compiled.lua
+
+# Logs
+*.log
