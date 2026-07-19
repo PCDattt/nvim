@@ -10,28 +10,28 @@ return {
 				desc = "Toggle Breakpoint",
 			},
 			{
-				"<leader>dc",
+				"<F9>",
 				function()
 					require("dap").continue()
 				end,
 				desc = "Start/Continue Debugger",
 			},
 			{
-				"<leader>di",
+				"<F7>",
 				function()
 					require("dap").step_into()
 				end,
 				desc = "Step Into",
 			},
 			{
-				"<leader>do",
+				"<F8>",
 				function()
 					require("dap").step_over()
 				end,
 				desc = "Step Over",
 			},
 			{
-				"<leader>dO",
+				"<S-F8>",
 				function()
 					require("dap").step_out()
 				end,
@@ -71,6 +71,22 @@ return {
               require("dap-go").debug_last()
           end,
           desc = "Debug Last Go Test",
+      },
+      {
+        "<leader>dw",
+        function()
+          require("dapui").eval(nil, { enter = true })
+        end,
+        mode = { "n", "v" },
+        desc = "DAP Add Watch",
+      },
+      {
+        "Q",
+        function()
+          require("dapui").eval()
+        end,
+        mode = { "n", "v" },
+        desc = "DAP Peek Variable",
       },
 		},
 	},
