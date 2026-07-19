@@ -58,6 +58,20 @@ return {
         end,
         desc = "Toggle DAP UI",
       },
+      {
+          "<leader>dT",
+          function()
+              require("dap-go").debug_test()
+          end,
+          desc = "Debug Go Test",
+      },
+      {
+          "<leader>dL",
+          function()
+              require("dap-go").debug_last()
+          end,
+          desc = "Debug Last Go Test",
+      },
 		},
 	},
 }
