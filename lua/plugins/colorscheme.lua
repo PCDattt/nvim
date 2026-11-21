@@ -1,27 +1,4 @@
 return {
-  -- Add gruvbox.nvim
-  {
-    "ellisonleao/gruvbox.nvim",
-    --   priority = 1000, -- Load this before all other plugins
-    config = function()
-      require("gruvbox").setup({
-        italic = {
-          strings = true,
-          comments = true,
-          operators = true,
-          folds = true,
-        },
-        contrast = "soft", -- or "hard" / "medium"
-        palette_overrides = {},
-        overrides = {},
-        dim_inactive = false,
-        transparent_mode = false,
-      })
-      -- Set the style to light
-      vim.o.background = "light"
-    end,
-  },
-
   {
     "folke/tokyonight.nvim",
     lazy = false,
@@ -48,7 +25,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox",
+      colorscheme = "tokyonight-day",
     },
   },
 }
