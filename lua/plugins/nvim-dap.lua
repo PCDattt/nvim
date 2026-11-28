@@ -37,7 +37,7 @@ return {
         floating = { border = "rounded" },
 
         render = {
-          max_type_length = 60,
+          max_type_length = 0,
           max_value_lines = 200,
         },
 
